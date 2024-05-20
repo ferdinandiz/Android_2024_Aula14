@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="33sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"/>
+
+    <include
+        layout="@layout/imagens"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/txtJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="20sp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="P1: 0"/>
+
+    <TextView
+        android:id="@+id/txtJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="20sp"
+        android:layout_alignParentEnd="true"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="P2: 0"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Voltar"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="20sp"/>
+
+
+
+</RelativeLayout>

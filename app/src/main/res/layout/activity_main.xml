@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15sp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:text="Jogador 1:"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edJ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_toEndOf="@id/j1"
+        android:layout_marginStart="10sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="70dp"/>
+
+
+    <TextView
+        android:id="@+id/j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/j1"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:text="Jogador 2:"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edJ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/j1"
+        android:layout_toEndOf="@id/j2"
+        android:layout_marginStart="10sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Iniciar"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
